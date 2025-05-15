@@ -1,5 +1,3 @@
-import fetch from "node-fetch"; // For local testing, ensure node-fetch is installed
-
 const MONDAY_API_KEY = process.env.MONDAY_API_KEY;
 const MONDAY_BOARD_ID = "64184574";
 
