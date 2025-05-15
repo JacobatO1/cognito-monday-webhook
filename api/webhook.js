@@ -46,6 +46,7 @@ export default async function handler(req, res) {
         mutation {
           create_item (
             board_id: ${MONDAY_BOARD_ID},
+            group_id: "topics",
             item_name: "${itemName.replace(/"/g, '\\"')}",
             column_values: "${columnValuesStr}"
           ) {
