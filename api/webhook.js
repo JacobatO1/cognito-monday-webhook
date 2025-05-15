@@ -1,5 +1,5 @@
 const MONDAY_API_KEY = process.env.MONDAY_API_KEY;
-const MONDAY_BOARD_ID = "64184574";
+const MONDAY_BOARD_ID = "1556561593";
 
 export default async function handler(req, res) {
   if (req.method === "POST") {
