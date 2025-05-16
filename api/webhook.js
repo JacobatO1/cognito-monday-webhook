@@ -1,6 +1,6 @@
 const MONDAY_API_KEY = process.env.MONDAY_API_KEY;
 const MONDAY_BOARD_ID = 1556561593; // ✅ Your updated board ID
-const MONDAY_GROUP_ID = "new_jobs"; // ✅ Group where items will be created
+const MONDAY_GROUP_ID = "topics"; // ✅ Group where items will be created
 
 export default async function handler(req, res) {
   if (req.method !== "POST") {
