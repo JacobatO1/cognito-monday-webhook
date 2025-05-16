@@ -44,7 +44,7 @@ export default async function handler(req, res) {
       text0: PropertyType, // Property Type (Text)
       date5: PropertyAvailableDate ? { date: PropertyAvailableDate } : null, // Property Available Date
       date1: StartOfTenancy ? { date: StartOfTenancy } : null, // Start of Tenancy
-      numbers23: parseInt(Id) || 0, // Form Entry ID (Number)
+      numbers23: Id.toString(), // ✅ Send as text, not number
       long_text: { text: Comments || "" }, // Comments (Long Text)
       text: AgentsName, // Agent's Name (Text)
       email: { email: AgentsEmail, text: AgentsEmail }, // Agent's Email (Email)
