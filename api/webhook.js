@@ -40,7 +40,7 @@ export default async function handler(req, res) {
       text05: PropertyAddress?.FullAddress || "", // Full Address
       status_1: { label: CompanyName }, // Company (Status column)
       job_type: { label: JobType }, // Job Type (Status column)
-      no__bedrooms: NoOfBedrooms.toString(), // No of Bedrooms (Number)
+      no__bedrooms: NoOfBedrooms?.toString() || "", // No of Bedrooms (Number)
       text0: PropertyType, // Property Type (Text)
       date5: PropertyAvailableDate ? { date: PropertyAvailableDate } : null, // Property Available Date
       date1: StartOfTenancy ? { date: StartOfTenancy } : null, // Start of Tenancy
